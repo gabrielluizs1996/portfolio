@@ -1,0 +1,101 @@
+.background {
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, rgba(99, 26, 255, 0.2), rgba(0, 0, 0, 0.2), rgba(4, 211, 97, 0.2)), url("/images/background-moon.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // background-image: url("/images/background-moon.jpg"), -moz-linear-gradient(to bottom right, #631AFF, #000 , #04D361);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glassCard {
+    height: 291px;
+    width: 480px;
+    border-radius: 25px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    //Glassmorphism
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: inset 0px 0px 50px 0px rgba(202, 172, 255, 0.3);
+    backdrop-filter: blur(7px);
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+
+      .entryCard {
+        background: -webkit-linear-gradient(left, #8257E6, #04D361); 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        width: 50%;
+      }
+
+      .code {
+        font-size: 0.75rem;
+        position: absolute;
+        right: 2rem;
+        top: 2rem;
+        opacity: 0.3;
+        text-align: right;
+        letter-spacing: 0.5rem;
+        font-weight: 100;
+      }
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+
+      .avatarCircle {
+        height: 72px;
+        padding-right: 0.5rem;
+      }
+
+      .subtitle {
+        display: flex;
+        align-items: center;
+
+        a {
+          text-decoration: none;
+        }
+
+        h2 {
+          padding-left: 0.5rem;
+        }
+      }
+      
+      .icon {
+          font-size: 1.5rem;
+          color: var(--white-subtitle);
+      }
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .contentFooter {
+        display: flex;
+        align-items: center;
+        h3 {
+          padding-left: 0.5rem;
+        }
+      }
+
+      .linkedin {
+        justify-content: flex-end;
+      }
+
+      .icon {
+        font-size: 2rem;
+        color: var(--blue);
+      }
+    }
+}

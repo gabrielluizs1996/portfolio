@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white-title: #FFFFE6;
+    --white-subtitle: #A8A8B3;
+    --blue: #26B3CC;
+    --purple: #8257E6;
+    --green: #04D361;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: 'Aldrich', sans-serif;
+    color: var(--white-title);
+    font-weight: 100;
+}
+
+h2 {
+    font-size: 1rem;
+    font-family: 'Aldrich', sans-serif;
+}
+
+h3 {
+    font-size: 0.75rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+    color: var(--white-subtitle);
+}
