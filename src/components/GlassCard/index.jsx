@@ -1,13 +1,26 @@
 import React from 'react'
 import styles from './styles.module.scss'
-
+import styled from 'styled-components'
+import { motion, useMotionValue, useTransform } from 'framer-motion'
 import { faLinkedin, faReact, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function GlassCard() {
+    const x = useMotionValue(0)
+    const y = useMotionValue(0)
+    const rotateX = useTransform(y, [-100, 100], [30, -30])
+    const rotateY = useTransform(x, [-100, 100], [-30, 30])
+
+
     return (
         <div className={styles.background}>
-            <div className={styles.glassCard}>
+            <CardContainer className={styles.glassCard}
+                style={{ x, y, rotateX, rotateY, z: 100 }}
+                drag
+                dragElastic={0.16}
+                dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
+                whileTap={{ cursor: 'grabbing' }}
+            >
                 <div className={styles.title}>
                     <h2 className={styles.entryCard}>{"<Entry Card />"}</h2>
                     <div>
@@ -42,9 +55,26 @@ function GlassCard() {
                         </a>
                     </div>
                 </div>
-            </div>
+            </CardContainer>
         </div>
     )
 }
+
+const CardContainer = styled(motion.div)`
+    height: 291px;
+    width: 480px;
+    border-radius: 25px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0.5rem;
+
+    //Glassmorphism
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: inset 0px 0px 50px 0px rgba(202, 172, 255, 0.3);
+    backdrop-filter: blur(7px);
+
+`
 
 export default GlassCard

@@ -13,20 +13,7 @@
 }
 
 .glassCard {
-    height: 291px;
-    width: 480px;
-    border-radius: 25px;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 0.5rem;
-
-    //Glassmorphism
-    background: rgba(255, 255, 255, 0.05);
-    box-shadow: inset 0px 0px 50px 0px rgba(202, 172, 255, 0.3);
-    backdrop-filter: blur(7px);
-
+  
     .title {
       display: flex;
       justify-content: space-between;
