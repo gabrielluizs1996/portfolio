@@ -75,8 +75,8 @@ const CardContainer = styled(motion.div)`
     /* box-shadow: inset 0px 0px 50px 0px rgba(202, 172, 255, 0.3); */
     box-shadow: 10px 10px 20px -15px rgba(202, 172, 255, 0.3);
     backdrop-filter: blur(7px);
-    border-right: 1px solid rgba(255,255,255,0.2);
-    border-bottom: 1px solid 
+    border-right: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
 
 `
 
