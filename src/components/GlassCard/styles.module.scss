@@ -10,81 +10,79 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.glassCard {
   
-    .title {
-      display: flex;
-      justify-content: space-between;
-
-      .entryCard {
-        background: -webkit-linear-gradient(left, #8257E6, #04D361); 
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        width: 40%;
-      }
-
-      .code {
-        font-size: 0.75rem;
-        position: absolute;
-        right: 2rem;
-        top: 2rem;
-        opacity: 0.3;
-        text-align: right;
-        letter-spacing: 0.5rem;
-        font-weight: 100;
-      }
+  .title {
+    display: flex;
+    justify-content: space-between;
+  
+    .entryCard {
+      background: -webkit-linear-gradient(left, #8257E6, #04D361); 
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      width: 40%;
     }
-
-    .content {
+  
+    .code {
+      font-size: 0.75rem;
+      position: absolute;
+      right: 2rem;
+      top: 2rem;
+      opacity: 0.3;
+      text-align: right;
+      letter-spacing: 0.5rem;
+      font-weight: 100;
+    }
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+  
+    .avatarCircle {
+      height: 72px;
+      padding-right: 0.5rem;
+    }
+  
+    .subtitle {
       display: flex;
       align-items: center;
-
-      .avatarCircle {
-        height: 72px;
-        padding-right: 0.5rem;
+  
+      a {
+        text-decoration: none;
       }
-
-      .subtitle {
-        display: flex;
-        align-items: center;
-
-        a {
-          text-decoration: none;
-        }
-
-        h2 {
-          padding-left: 0.5rem;
-        }
-      }
-      
-      .icon {
-          font-size: 1.5rem;
-          color: var(--white-subtitle);
+  
+      h2 {
+        padding-left: 0.5rem;
       }
     }
-
-    .footer {
+    
+    .icon {
+        font-size: 1.5rem;
+        color: var(--white-subtitle);
+    }
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    .contentFooter {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-
-      .contentFooter {
-        display: flex;
-        align-items: center;
-        h3 {
-          padding-left: 0.5rem;
-        }
-      }
-
-      .linkedin {
-        justify-content: flex-end;
-      }
-
-      .icon {
-        font-size: 2rem;
-        color: var(--blue);
+      h3 {
+        padding-left: 0.5rem;
       }
     }
+  
+    .linkedin {
+      justify-content: flex-end;
+    }
+  
+    .icon {
+      font-size: 2rem;
+      color: var(--blue);
+    }
+  }
 }
+
