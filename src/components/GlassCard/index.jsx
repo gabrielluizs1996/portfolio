@@ -19,6 +19,7 @@ function GlassCard() {
                 drag
                 dragElastic={0.16}
                 dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
+                whileHover={{ cursor: 'pointer' }}
                 whileTap={{ cursor: 'grabbing' }}
             >
                 <div className={styles.title}>

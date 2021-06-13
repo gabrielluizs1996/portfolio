@@ -4,10 +4,16 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #0D0D0D;
+}
+
 :root {
     --white-title: #FFFFE6;
     --white-subtitle: #A8A8B3;
+    --white-subtitle-hover: #989898;
     --blue: #26B3CC;
+    --blue-10: #20A3DD;
     --purple: #8257E6;
     --green: #04D361;
 }
@@ -32,3 +38,4 @@ h3 {
 h2, h3, h4, h5, h6 {
     color: var(--white-subtitle);
 }
+
