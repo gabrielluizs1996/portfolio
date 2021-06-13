@@ -9,7 +9,7 @@ function Skills() {
     return (
         <>
             <div className={styles.skillsTitle}>
-                <h1>SKILLS</h1>
+                <h1>Skills</h1>
             </div>
             <div className={styles.skills}>
                 <div className={styles.skillsContainer}>
@@ -54,7 +54,7 @@ const SkillCard = styled(motion.div)`
     align-items: center;
     justify-content: center;
     padding: 0.875rem;
-    margin: 2rem;
+    margin: 1rem;
     height: 100px;
     width: 100px;
     border-radius: 25px;
