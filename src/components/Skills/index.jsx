@@ -16,32 +16,32 @@ function Skills() {
                     <SkillCard
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}>
-                        <FontAwesomeIcon style={{ color: '#26B3CC' }} className={styles.icon} icon={faReact} />
+                        <FontAwesomeIcon style={{ color: '#26B3CC', filter: 'drop-shadow( 0px 0px 3px #26B3CC)' }} className={styles.icon} icon={faReact} />
                     </SkillCard>
                     <SkillCard
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}>
-                        <FontAwesomeIcon style={{ color: '#FAFF1A' }} className={styles.icon} icon={faJsSquare} />
+                        <FontAwesomeIcon style={{ color: '#FAFF1A', filter: 'drop-shadow( 0px 0px 3px #FAFF1A)' }} className={styles.icon} icon={faJsSquare} />
                     </SkillCard>
                     <SkillCard
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}>
-                        <FontAwesomeIcon style={{ color: '#FF7A1A' }} className={styles.icon} icon={faHtml5} />
+                        <FontAwesomeIcon style={{ color: '#FF7A1A', filter: 'drop-shadow( 0px 0px 3px #FF7A1A)' }} className={styles.icon} icon={faHtml5} />
                     </SkillCard>
                     <SkillCard
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}>
-                        <FontAwesomeIcon style={{ color: '#1A83FF' }} className={styles.icon} icon={faCss3Alt} />
+                        <FontAwesomeIcon style={{ color: '#1A83FF', filter: 'drop-shadow( 0px 0px 3px #1A83FF)' }} className={styles.icon} icon={faCss3Alt} />
                     </SkillCard>
                     <SkillCard
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}>
-                        <FontAwesomeIcon style={{ color: '#ED1AFF' }} className={styles.icon} icon={faSass} />
+                        <FontAwesomeIcon style={{ color: '#ED1AFF', filter: 'drop-shadow( 0px 0px 3px #ED1AFF)' }} className={styles.icon} icon={faSass} />
                     </SkillCard>
                     <SkillCard
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}>
-                        <FontAwesomeIcon style={{ color: '#FF431A' }} className={styles.icon} icon={faGitAlt} />
+                        <FontAwesomeIcon style={{ color: '#FF431A', filter: 'drop-shadow( 0px 0px 3px #FF431A)' }} className={styles.icon} icon={faGitAlt} />
                     </SkillCard>
                 </div>
             </div>
@@ -57,20 +57,12 @@ const SkillCard = styled(motion.div)`
     margin: 1rem;
     height: 100px;
     width: 100px;
-    border-radius: 25px;
-    
-    /* background-color: #212121;
-    box-shadow: 5px 5px 16px 0 #333, -5px -5px 10px 0 rgba(255, 255, 255, 0.3); */
-    
+    border-radius: 25px; 
     background-image: linear-gradient( to bottom right, #181D26, #212121);
-    /* box-shadow: 10px 10px 20px -15px rgba(202, 172, 255, 0.8); */
-    /* border-right: 2px solid #C1C9D933;
-    border-bottom: 2px solid #C1C9D933; */
     
-    &:active {
-        box-shadow: inset -5px -5px 20px -15px #fff,inset 10px 10px 20px -15px rgba(255, 255, 255, 0.3);
+    &:hover {
+        box-shadow: inset -5px -5px 20px -15px #000, inset 10px 10px 20px -15px rgba(255, 255, 255, 0.3);
     }
-    
 `
 
 export default Skills
