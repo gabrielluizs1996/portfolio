@@ -9,7 +9,7 @@ function Skills() {
     return (
         <>
             <div className={styles.skillsTitle}>
-                <h1>Skills</h1>
+                <h1><span>{"< "}</span>Skills<span>{" />"}</span></h1>
             </div>
             <div className={styles.skills}>
                 <div className={styles.skillsContainer}>
@@ -58,10 +58,19 @@ const SkillCard = styled(motion.div)`
     height: 100px;
     width: 100px;
     border-radius: 25px;
-    background-image: linear-gradient( to bottom right, #181D26, #465573);
+    
+    /* background-color: #212121;
+    box-shadow: 5px 5px 16px 0 #333, -5px -5px 10px 0 rgba(255, 255, 255, 0.3); */
+    
+    background-image: linear-gradient( to bottom right, #181D26, #212121);
     /* box-shadow: 10px 10px 20px -15px rgba(202, 172, 255, 0.8); */
-    border-right: 2px solid #C1C9D933;
-    border-bottom: 2px solid #C1C9D933;
+    /* border-right: 2px solid #C1C9D933;
+    border-bottom: 2px solid #C1C9D933; */
+    
+    &:active {
+        box-shadow: inset -5px -5px 20px -15px #fff,inset 10px 10px 20px -15px rgba(255, 255, 255, 0.3);
+    }
+    
 `
 
 export default Skills

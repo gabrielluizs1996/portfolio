@@ -3,6 +3,13 @@
     align-items: center;
     justify-content: center;
     padding-top: 4.5rem;
+
+    span {
+      background: -webkit-linear-gradient(left, #8257E6, #04D361); 
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      width: 40%;
+    }
 }
 
 .skills {
