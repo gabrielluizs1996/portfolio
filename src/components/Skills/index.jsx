@@ -3,7 +3,7 @@ import styles from './styles.module.scss'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faReact, faJsSquare, faHtml5, faCss3Alt, faSass, faGit } from '@fortawesome/free-brands-svg-icons'
+import { faReact, faJsSquare, faHtml5, faCss3Alt, faSass, faGitAlt } from '@fortawesome/free-brands-svg-icons'
 
 function Skills() {
     return (
@@ -41,7 +41,7 @@ function Skills() {
                     <SkillCard
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}>
-                        <FontAwesomeIcon style={{ color: '#FF431A' }} className={styles.icon} icon={faGit} />
+                        <FontAwesomeIcon style={{ color: '#FF431A' }} className={styles.icon} icon={faGitAlt} />
                     </SkillCard>
                 </div>
             </div>
