@@ -1,11 +1,18 @@
+.background {
+    background-image: url("/images/background-skills.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .skillsTitle {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 4.5rem;
+    padding-top: 4rem;
 
     span {
-      background: -webkit-linear-gradient(left, #8257E6, #04D361); 
+      background: rgba(255, 255, 255, 0.3); 
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       width: 40%;
@@ -21,7 +28,8 @@
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        margin: 2rem;
+        margin: 4rem;
+        padding-bottom: 4rem;
         align-items: center;
         justify-content: center;
 

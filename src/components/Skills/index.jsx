@@ -7,7 +7,7 @@ import { faReact, faJsSquare, faHtml5, faCss3Alt, faSass, faGitAlt } from '@fort
 
 function Skills() {
     return (
-        <>
+        <div className={styles.background}>
             <div className={styles.skillsTitle}>
                 <h1><span>{"< "}</span>Skills<span>{" />"}</span></h1>
             </div>
@@ -45,7 +45,7 @@ function Skills() {
                     </SkillCard>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

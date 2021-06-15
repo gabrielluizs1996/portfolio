@@ -1,0 +1,70 @@
+.background {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, rgba(99, 26, 255, 0.65), rgba(4, 211, 97, 0.65)), url("/images/background-about.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-title);
+
+    padding: 160px 0 160px 0;
+
+    .content {
+        margin: 4rem;
+        width: 800px;
+        
+        .divIcon {
+            padding-bottom: 4.5rem;
+
+            .icon {
+                font-size: 4.5rem;
+            }
+        }
+
+        .divQuote{
+
+            p {
+                font-size: 2rem;
+                font-family: 'Roboto', sans-serif;
+                text-align: justify;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .divIcon .icon {
+                font-size: 2rem;
+            }
+
+            .divQuote p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (min-width: 600px) and (max-width: 1100px) {
+            
+            .divIcon .icon {
+                font-size: 3rem;
+            }
+
+            .divQuote p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        .content .divIcon {
+            padding-bottom: 2rem;
+        }
+    }
+
+    @media (min-width: 600px) and (max-width: 1100px) {
+        .content {
+            width: 500px;
+        }
+    }
+}
