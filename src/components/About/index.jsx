@@ -11,14 +11,11 @@ function Index() {
                     <FontAwesomeIcon className={styles.icon} icon={faQuoteLeft} />
                 </div>
                 <div className={styles.divQuote}>
-                    <p className={styles.icon}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                        in justo interdum, vehicula ex ac, mattis nibh. Mauris et viverra
-                        ex. Nulla vitae molestie neque, at euismod tortor. Curabitur
-                        euismod, nisl vel eleifend cursus, urna nunc ullamcorper nulla,
-                        a ullamcorper tellus massa et turpis. Nam rutrum tempus felis,
-                        volutpat iaculis libero tempus vel. Sed ornare, mi sit amet
-                        auctor venenatis, orci metus condimentum urna, ut varius massa
-                        nunc nec est. Morbi vel dolor sit amet leo dictum ullamcorper.</p>
+                    <p className={styles.icon}>Olá, eu sou um <span>viajante do espaço</span> desenvolvedor React.Js
+                        obcecado pelo universo e amante da astronomia. Atualmente estudo conceitos de desenvolvimento
+                        Web Moderno e trabalho numa startup colocando os meus conhecimentos em prática todos os dias
+                        e assim como o campo gravitacional de um buraco negro absorve matéria, eu absorvo conhecimento
+                        e experiências neste período como desenvolvedor e cá entre nós que viagem incrível essa.</p>
                 </div>
             </div>
         </div>
