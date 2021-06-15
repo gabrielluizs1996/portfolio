@@ -61,8 +61,9 @@ const SkillCard = styled(motion.div)`
     background-image: linear-gradient( to bottom right, #181D26, #212121);
     
     &:hover {
-        box-shadow: inset -5px -5px 20px -15px #000, inset 10px 10px 20px -15px rgba(255, 255, 255, 0.3);
-    }
+        /* box-shadow: inset -5px -5px 20px -15px #000, inset 10px 10px 20px -15px rgba(255, 255, 255, 0.3); */
+        /* border: 1px solid rgba(255, 255, 255, 0.3); */
+   }
 `
 
 export default Skills
